@@ -58,23 +58,14 @@
       transform: scale(1.05);
       box-shadow: 0px 8px 20px rgba(241, 196, 15, 0.5);
     }
-    .image {
-      max-width: 80%;
-      border-radius: 10px;
-      margin-bottom: 20px;
-      opacity: 0;
-      transform: scale(0.8);
-      transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .highlight-image {
+    .image, .highlight-image {
       max-width: 80%;
       border-radius: 10px;
       margin: 30px auto;
       display: block;
-      box-shadow: 0px 0px 15px rgba(241, 196, 15, 0.3);
+      opacity: 0;
+      transform: scale(0.8);
+      transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
     }
     ul {
       text-align: left;
@@ -106,7 +97,7 @@
   <div class="header">💪 Treino Ideal Premium - Evolua Sem Sair de Casa</div>
 
   <div class="container">
-    <img src="instrutor-treino-premium.png" alt="Instrutor com halteres" class="image">
+    <img src="Instrutor-Treino-Premium.png" alt="Instrutor com halteres" class="image">
 
     <h1>Treino personalizado com acompanhamento 100% online</h1>
     <p>Chega de desculpas! Com o <strong>Treino Ideal Premium</strong> você tem o que precisa pra mudar de vez: treino personalizado, acompanhamento de verdade e acesso direto pelo celular.</p>
@@ -114,7 +105,7 @@
     <h2>🎯 Por que essa apresentação?</h2>
     <p>Apresentamos uma solução prática, exclusiva e com foco em resultados reais: um serviço de treino com acompanhamento profissional totalmente virtual, ideal para quem quer superar limites sem sair de casa.</p>
 
-    <img src="treinando-em-casa.png" alt="Treinamento via celular" class="highlight-image">
+    <img src="Treinando-em-Casa.png" alt="Treinamento via celular" class="highlight-image">
 
     <h2>💥 O que você vai receber:</h2>
     <ul>
@@ -138,7 +129,7 @@
   <script>
     $(document).ready(function() {
       $(".container").css({ "opacity": "1", "transform": "translateY(0)" });
-      $(".image").css({ "opacity": "1", "transform": "scale(1)" });
+      $(".image, .highlight-image").css({ "opacity": "1", "transform": "scale(1)" });
     });
   </script>
 
