@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Treino Ideal Premium - Transforme Seu Corpo</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      overflow-x: hidden;
+    }
+    .header {
+      background: #1e1e1e;
+      color: #fff;
+      padding: 20px 10px;
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      animation: fadeInDown 1s ease-in-out;
+    }
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+    h1, h2 {
+      color: #e63946;
+    }
+    p {
+      font-size: 16px;
+    }
+    .button {
+      display: inline-block;
+      padding: 15px 30px;
+      background-color: #e63946;
+      color: #fff;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 20px;
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0px 5px 15px rgba(230, 57, 70, 0.4);
+    }
+    .button:hover {
+      background: #c52737;
+      transform: scale(1.05);
+      box-shadow: 0px 8px 20px rgba(230, 57, 70, 0.5);
+    }
+    .image {
+      max-width: 60%;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      opacity: 0;
+      transform: scale(0.8);
+      transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+    }
+    ul {
+      text-align: left;
+      max-width: 600px;
+      margin: 20px auto;
+    }
+    ul li {
+      margin-bottom: 10px;
+    }
+    @media (max-width: 768px) {
+      .image {
+        width: 80%;
+      }
+    }
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">💪 Treino Ideal Premium - Evolua Sem Sair de Casa</div>
+
+  <div class="container">
+    <img src="https://i.imgur.com/5QFhRvK.jpg" alt="Treinamento Online" class="image">
+
+    <h1>Treino personalizado com acompanhamento 100% online</h1>
+    <p>Chega de desculpas! Com o <strong>Treino Ideal Premium</strong> você tem o que precisa pra mudar de vez: treino personalizado, acompanhamento de verdade e acesso direto pelo celular.</p>
+
+    <h2>🎯 Por que essa apresentação?</h2>
+    <p>Apresentamos uma solução prática, exclusiva e com foco em resultados reais: um serviço de treino com acompanhamento profissional totalmente virtual, ideal para quem quer superar limites sem sair de casa.</p>
+
+    <h2>💥 O que você vai receber:</h2>
+    <ul>
+      <li>✅ Treino personalizado adaptado ao seu objetivo e nível</li>
+      <li>✅ Acompanhamento direto com o treinador</li>
+      <li>✅ Acesso pelo celular de onde estiver</li>
+      <li>✅ Evolução semanal com ajustes reais</li>
+      <li>✅ Suporte, constância e motivação para não desistir</li>
+    </ul>
+
+    <h2>🔓 Liberte o seu potencial</h2>
+    <ul>
+      <li>👉 Supere seus limites</li>
+      <li>👉 Alcance o corpo que você deseja</li>
+      <li>👉 Tenha orientação profissional no seu ritmo</li>
+    </ul>
+
+    <a href="#" class="button">QUERO COMEÇAR AGORA 🔥</a>
+  </div>
+
+  <script>
+    $(document).ready(function() {
+      $(".container").css({ "opacity": "1", "transform": "translateY(0)" });
+      $(".image").css({ "opacity": "1", "transform": "scale(1)" });
+    });
+  </script>
+
+</body>
+</html>
