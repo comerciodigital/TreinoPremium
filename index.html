@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Treino Premium</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Treino Ideal Premium - Transforme Seu Corpo</title>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <style>
     body {
@@ -30,30 +30,10 @@
       background-color: #1a1a1a;
       border-radius: 10px;
       box-shadow: 0px 0px 10px rgba(241, 196, 15, 0.2);
+      text-align: center;
       opacity: 0;
       transform: translateY(50px);
       transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-    }
-    .intro-section {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-      gap: 20px;
-      text-align: left;
-    }
-    .intro-text {
-      flex: 1 1 300px;
-      min-width: 250px;
-    }
-    .image {
-      flex: 1 1 300px;
-      width: 100%;
-      max-width: 300px;
-      border-radius: 10px;
-      opacity: 0;
-      transform: scale(0.8);
-      transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
     }
     h1, h2 {
       color: #f1c40f;
@@ -78,6 +58,24 @@
       transform: scale(1.05);
       box-shadow: 0px 8px 20px rgba(241, 196, 15, 0.5);
     }
+    .image {
+      max-width: 80%;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      opacity: 0;
+      transform: scale(0.8);
+      transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .highlight-image {
+      max-width: 80%;
+      border-radius: 10px;
+      margin: 30px auto;
+      display: block;
+      box-shadow: 0px 0px 15px rgba(241, 196, 15, 0.3);
+    }
     ul {
       text-align: left;
       max-width: 600px;
@@ -87,12 +85,8 @@
       margin-bottom: 10px;
     }
     @media (max-width: 768px) {
-      .intro-section {
-        flex-direction: column;
-        text-align: center;
-      }
-      .image {
-        max-width: 100%;
+      .image, .highlight-image {
+        width: 100%;
       }
     }
     @keyframes fadeInDown {
@@ -109,21 +103,18 @@
 </head>
 <body>
 
-  <div class="header">💪 Treino Premium</div>
+  <div class="header">💪 Treino Ideal Premium - Evolua Sem Sair de Casa</div>
 
   <div class="container">
-    <div class="intro-section">
-      <img src="Instrutor-Treino-Premium.png" alt="Instrutor com halteres" class="image">
-      <div class="intro-text">
-        <h1>Treino personalizado com acompanhamento 100% online</h1>
-        <p>Chega de desculpas! Com o <strong>Treino Ideal Premium</strong> você tem o que precisa pra mudar de vez: treino personalizado, acompanhamento de verdade e acesso direto pelo celular.</p>
-      </div>
-    </div>
+    <img src="instrutor-treino-premium.png" alt="Instrutor com halteres" class="image">
+
+    <h1>Treino personalizado com acompanhamento 100% online</h1>
+    <p>Chega de desculpas! Com o <strong>Treino Ideal Premium</strong> você tem o que precisa pra mudar de vez: treino personalizado, acompanhamento de verdade e acesso direto pelo celular.</p>
 
     <h2>🎯 Por que essa apresentação?</h2>
-    <p>Apresentamos uma solução prática, exclusiva e com foco em resultados reais: um serviço de treino com acompanhamento profissional totalmente virtual, ideal para quem quer superar limites.</p>
+    <p>Apresentamos uma solução prática, exclusiva e com foco em resultados reais: um serviço de treino com acompanhamento profissional totalmente virtual, ideal para quem quer superar limites sem sair de casa.</p>
 
-    <img src="Treinando-em-Casa.png" alt="Pessoa treinando em casa" class="image">
+    <img src="treinando-em-casa.png" alt="Treinamento via celular" class="highlight-image">
 
     <h2>💥 O que você vai receber:</h2>
     <ul>
